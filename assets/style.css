@@ -1,0 +1,189 @@
+body {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+    color: #742305;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fef7e2;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 100px;
+}
+
+#shopContanier {
+    background-color: #ffdf7f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-size: 1.8rem;
+    margin: 1rem;
+    padding: 2rem;
+
+}
+
+#shopContanier img {
+width: 20%;
+margin-right: 12px;
+}
+
+#linkContanier {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.smallLink {
+    text-align: center;
+    background-color: #ffdf7f;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 40%;
+    border-radius: 100px;
+}
+
+.smallLink:nth-child(odd) {
+    margin-right: 1rem;
+} 
+
+h1 {
+    margin: 3rem 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.card {
+    background-color: #fef7e2;
+    margin-bottom: 3rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    max-width: 328px;
+}
+
+.bioHoney p:first-child {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.bioHoney p:last-child {
+    font-size: 0.8rem;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+}
+
+.firstRow {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: #ffdf7f;
+    padding: 0.5rem;
+    width: 40%;
+    border-radius: 100px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+aside {
+    border-radius: 25px;
+    background-color: #fef7e2;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+h3 {
+    font-weight: bold;
+    font-weight: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+aside img {
+    margin-top: 1rem;
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+}
+
+@media screen and (min-width: 1200px){
+    body {
+        display: flex;
+        padding: 0;
+        text-align: left;
+    }
+
+    h1, h2, aside {
+        margin-left: 2rem;
+    }
+
+    header {
+        border-radius: 0;
+        padding: 0;
+        width: 160%;
+    }
+
+    #linkContanier {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .card {
+        width: 20%;
+    }
+
+    #noDisplay {
+        display: none;
+    }
+
+    #cardContainer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    button {
+        width: 55%;
+        color: #742305;
+        font-weight: bold;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; 
+    }
+
+
+    aside {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    aside img {
+        max-width: 50%;
+    }
+
+   
+}
